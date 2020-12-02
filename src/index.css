@@ -13,9 +13,27 @@ code {
     monospace;
 }
 
+form {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  background-color: rgb(206, 240, 206);
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 5px 5px 3px darkgreen;
+}
+
+.btn {
+  border-radius: 5px;
+    margin: 2px;
+    padding: 5px;
+    background-color: #65ab88;
+    color: white;
+}
+
 .container {
   border: 1px solid darkgray;
   border-radius: 5px;
   background-color: rgb(206, 240, 206);
   padding: 10px;
+  box-shadow: 5px 5px 3px darkgreen;
 }
