@@ -37,3 +37,16 @@ form {
   padding: 10px;
   box-shadow: 5px 5px 3px darkgreen;
 }
+
+.port-item {
+  background-color: white;
+  padding: 5px;
+  margin: 2px;
+  border: 1px solid darkgreen;
+  overflow: auto;
+  clear: both;
+}
+
+.deploy-btn {
+  margin-left: 5px;
+}
