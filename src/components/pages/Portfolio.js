@@ -1,11 +1,5 @@
 import React from "react";
 import data from "../../Data/data.json"
-import employeeDir from "../../Resources/EmpDirCapture.PNG";
-import burger from "../../Resources/BurgerCapture.PNG";
-import covid from "../../Resources/CovidCapture.PNG";
-import parrot from "../../Resources/parrot-passion.PNG";
-import passwordPic from "../../Resources/PassGenCapture.PNG";
-import weather from "../../Resources/WeatherCapture.PNG";
 
 
 function Portfolio() {
@@ -22,9 +16,9 @@ function Portfolio() {
                         <div className="port-item">
                             <h2>{item.title}</h2>
                             <p>{item.summary}</p>
-                            <img src={item.image} alt={item.title}/>
-                            <button className="deploy-btn" onclick={window.open(item.github)} target="_blank">Github App</button>
-                            <button className="deploy-btn" onclick={window.open(item.deploy)} target="_blank">Deployed Site</button>
+                            <img src={process.env.PUBLIC_URL + '/Resources/' + item.image} alt={item.title} width="500"/>
+                            <button className="deploy-btn" onClick={() => window.open(item.github)} >Github App</button>
+                            <button className="deploy-btn" onClick={() => window.open(item.deploy)} >Deployed Site</button>
                         </div>
                     </div>
                 )}
